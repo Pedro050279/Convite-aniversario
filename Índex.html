@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Aniversário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: #61dafb;
+            text-align: center;
+            padding: 20px;
+        }
+        code {
+            display: block;
+            background-color: #1e1e1e;
+            color: #dcdcaa;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            white-space: pre-wrap;
+        }
+        button {
+            background-color: #61dafb;
+            color: #282c34;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #21a1f1;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Convite de Aniversário</h1>
+    <p>Você foi convidado para o aniversário da <strong>Inês</strong>! 🎂</p>
+    <p><strong>📅 Data:</strong> 6 de janeiro de 2024</p>
+    <p><strong>⏰ Hora:</strong> 12:00 (Almoço)</p>
+    <p><strong>📍 Local:</strong> Colinas do Cruzeiro</p>
+
+    <p>Confirme sua presença clicando abaixo:</p>
+    <button onclick="confirmarPresenca()">Sim</button>
+    <button onclick="recusarPresenca()">Não</button>
+
+    <div class="message" id="mensagem"></div>
+
+    <script>
+        function confirmarPresenca() {
+            document.getElementById('mensagem').innerText = "🎉 Obrigado! Estamos ansiosos para te ver lá!";
+        }
+
+        function recusarPresenca() {
+            document.getElementById('mensagem').innerText = "😢 Que pena! Esperamos te ver em outra ocasião.";
+        }
+    </script>
+</body>
+</html>
